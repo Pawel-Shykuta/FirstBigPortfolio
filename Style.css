@@ -1,0 +1,656 @@
+html{
+    width: 100%;
+    scroll-behavior:smooth;
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 3000px;
+}
+
+.container{
+    justify-content: space-between;
+    width: 100%;
+    display: flex; 
+    position: fixed;
+    background-color: rgba(3, 3, 3, 0.777);
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.container ul {
+    list-style: none;
+    display: flex;
+    margin-right: 0;
+    padding: 0;
+}
+
+.container ul li a{  
+    text-decoration: none;  
+    color: white;  
+    opacity: .5;
+    padding: 10px;
+    display: block;
+    transition: all .4s ease;
+}
+
+.container ul li{
+    padding: 0;
+    margin-right: 70px;
+    position: relative; 
+}
+
+
+.container ul li a:hover{
+    opacity: 1;
+}
+
+.container ul li ul{
+    padding: 0;
+    margin: 0;
+    width: 150px; 
+    left: 50%; /* Начинаем слева */
+    transform: translateX(-50%); /* Центрируем */
+    text-align: center;
+    display: none;
+   position: absolute;
+   top: 100%;
+   white-space: nowrap;
+   
+}
+
+.container ul li:hover ul{
+     display: block;
+     background-color: rgba(3, 3, 3, 0.777);
+     
+}
+
+
+.body-con{
+    margin-top: -70px;
+    background-image: url(https://static.wixstatic.com/media/a9ff3b_fd0d41b6daed4be3ab2bbe001e726784.jpg/v1/fill/w_980,h_683,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a9ff3b_fd0d41b6daed4be3ab2bbe001e726784.jpg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; /* Масштабирование по ширине и высоте */
+    background-position: center; /* Центрирование изображения */
+}
+
+.aut_text{
+    display: none;
+}
+
+.body-con h1{             /* Under header*/
+    text-align: center;
+    color: white;
+    padding-top: 300px;
+    font-size: 80px;
+}
+
+.IMG{
+    width: 50%;
+}
+
+section{                    /*First section */
+    display: flex;
+}
+
+
+
+
+
+.main{           /* main section*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Foto_1{                    
+background-image: url(Foto/Foto_1.png);
+width: 40%;
+height: 800px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.Foto_2{
+    background-image: url(Foto/Foto_2.png);
+    width: 40%;
+    height: 800px;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    } 
+
+.Foto_3{
+        background-image: url(Foto/Foto_3.png);
+        width: 40%;
+        height: 800px;
+        background-repeat: no-repeat;       
+        background-size: cover;
+        } 
+
+
+        .box {
+            
+            width: 100%;
+            height: 800px;
+            background-color: black;
+            opacity: 0; /* Сделать элемент полностью прозрачным */
+        }
+        
+        .box:hover {
+            opacity: 0.6; /* Сделать элемент полупрозрачным при наведении */
+        }
+
+      
+        
+
+
+        .box a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Центрирование по вертикали */
+            font-size: 30px;
+        }
+
+
+
+
+        .main_2 {
+            justify-content: center;
+            background-color: black;
+            text-align: center;
+            width: 100%;
+            padding: 20px 0; /* добавим отступы сверху и снизу для .foto_main_2 */
+        }
+
+        .foto_main_2 {
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+
+       .rukzaki{
+        color: white;
+        font-size: 30px;
+        padding-left: 30%;
+        display: flex;
+        
+       }
+       
+       .rukzak_1{
+        padding-top: 12px;
+       }
+        
+       .rukzak_3{
+        padding-top: 20px;
+       }
+
+        .rukzaki a{
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+           
+            transition: all .6s ease;
+        }
+       
+        .rukzaki p{
+            padding-top: 10px;
+            display: block;
+            transition: all .6s ease;
+        }
+
+        .rukzaki :hover p{
+            position:relative;
+            
+            min-width: 40px;
+            height: 60px;
+            background-color: silver;
+        }
+    
+
+        .rukzaki > div > p {          
+            width: 600px;
+            height: 300px;
+        }
+
+
+        .main_3{
+            background-image: url(Foto/Foto_under_Main.webp);
+            background-size: cover;
+            width: 100%;
+            height: 550px;
+            background-repeat: no-repeat;
+            
+        }
+
+        .main_3 nav {
+            background-color: rgba(0, 0, 0, 0.404);
+            color: white;
+            width: 50%;           
+        }
+        
+        .main_3 nav  p{
+            margin-left: 45%;
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+
+        .main_3 nav  h1{
+            margin-left: 45%;
+            font-size: 30px;
+            padding-top: 15%;
+            margin-bottom: 0;
+        }
+    
+
+
+
+        .main_4{   
+            justify-content: center;
+            background-color: black;  
+            width: 100%;
+            height: 500px;
+            display: flex;
+        }
+
+        .contact-form {
+            margin: 0 ;
+            padding: 20px;   
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+       
+
+
+        .contact-form button {
+            
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 20px;
+            align-self: flex-end; /* Выравниваем кнопку в конце формы */
+            transition:all .5s ease ;
+        }
+
+        .contact-form button:hover{
+            opacity: .7;
+        }
+     
+
+        .contacts_information{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-left: 10%;
+        }
+        .contacts_information a{
+            padding-top: 10px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        .contacts_information a:hover{
+            opacity: .7;
+        }
+        
+
+
+
+        footer{
+            margin-top: -30px;
+            width:100%;
+            height: 100px;
+            background-color: rgb(34, 34, 34);
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        footer h1{
+            padding-top: 30px;
+        }
+
+
+
+
+        .burger{
+            display: none;
+            position: relative;
+            z-index: 50;
+            align-items: center;
+            justify-content: flex-end;
+            width: 30px;
+            height: 18px;
+        }
+
+        .burger span{
+            height: 2px;
+            width: 80%;
+            transform: scale(1);
+            background-color: #2c2c2c;
+            border:2px black;
+        }
+
+       .burger::before, .burger::after{
+        content: '';
+        position: absolute;
+        height: 2PX;
+        width: 100%;
+        background-color: #2c2c2c;
+        transition: all .3s ease 0s;
+        }
+
+        .burger::before { top: 0;}
+        .burger::after {bottom: 0;}
+        
+        .burger.active span {transform:scale(0);}
+
+        .burger.active::before{
+            top: 50%;
+            transform: rotate(-45deg) translate(0, -50%);
+        }
+
+        .burger.active::after{
+            bottom: 50%;
+            transform: rotate(45deg) translate(0, 50%)
+        }
+
+        .open {
+            display: flex !important;
+        }
+
+
+
+
+
+
+        .contact-form textarea {
+            height: 100px;
+            width: 400px;
+        }
+
+      .texter{
+        max-width: 400px;
+      }
+
+
+
+        .form_submit_button button{
+            background-color: #000000;
+            border: 0;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            transition: all .3s ease;
+            margin-left: 100px;
+        }
+
+
+        .form_submit_button button:hover{
+            opacity: .6;
+        }
+
+
+
+
+
+
+
+
+
+
+
+      @media (max-width:450px){
+        .burger{           
+            margin-top: 10px;
+            margin-left: 10px;
+            display: flex;
+        }
+
+        .container{
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: 50;
+            overflow-y: auto;
+            padding: 50;
+            background-color: rgba(0, 0, 0, 0.926);
+            animation: burgerAnimation 0.6s;       
+            
+        }
+
+        .container ul{
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        
+        @keyframes burgerAnimation {
+         from{opacity: 0;}
+         to {opacity: 1;}
+
+        }
+        
+        body{
+            background-color: #000000;
+        }
+
+        .body-con{
+            margin-top: 150px;
+            width: 100%;
+            height: 200px;
+            font-size: 10px;
+        }
+
+        .body-con h1{
+            font-size: 30px;
+            padding: 0;
+        }
+
+        .Glavnaya{
+            display: flex;
+            color: white;
+            height: 200px;
+            background-color: #000000;
+        }
+        
+        section {
+            width: 100%;
+            flex-wrap: wrap;
+            display: block;
+        }
+
+        section .IMG{
+            width: 100%;
+        }
+
+        section .main{
+            display: block;
+            width: 100%;
+        }
+        
+        .Foto_1{
+        width: 100%;
+        height: 400px;
+        }
+
+        .Foto_2{
+            width: 100%;
+            height: 400px;
+        }
+
+        .Foto_3{
+            width: 100%;
+            height: 400px;
+        }
+
+
+
+
+         section.main_2{
+            display: block;
+            flex-wrap: wrap;
+            max-width: 450px;
+        }
+
+        .rukzaki{
+
+            display: block;
+            flex-wrap: wrap;
+            pad: 0;
+            margin-left: -20%;
+            justify-content: center;
+            max-width: 300px;
+        }
+        
+
+        .main_3 {
+            width: 100%;
+            height: 400px; /* Исправлено значение */
+            background-image: url('Foto/Foto_under_Main.webp');
+            background-size: cover; /* Изображение покрывает весь контейнер */
+            background-position: center; /* Центрирует изображение */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+   
+
+        .main_3 nav {
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.404);
+            color: white;
+            width: 100%;           
+        }
+        
+        .main_3 nav  p{
+            margin-left:20px;
+            font-size: 18px;
+            margin-top: 0;
+            margin-right: 20px;
+        }
+
+        .main_3 nav  h1{
+            margin-left: 20px;
+            font-size: 30px;
+            padding-top: 15%;
+            margin-bottom: 5px;
+            margin-right: 20px;
+        }
+
+
+        .main_4{
+            margin-top: 40px;
+            display: block;
+            flex-wrap: wrap;
+            width: 350px;
+            
+            margin-left: -60px;
+        }
+
+     
+
+     
+
+        .contacts_information{
+            margin-top: -190%;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-left: 30%;
+        }
+        .contacts_information a{
+            font-size: 15px;
+            padding-top: 10px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            transition: all .3s ease;
+        }
+
+        .contacts_information a:hover{
+            opacity: .7;
+        }
+
+
+        .contact-form{
+            margin-top: 140%;
+        }
+
+        .contact-form textarea{
+            width: 170px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .contact-form textarea {
+            height: 100px;
+            width: 250px;
+        }
+
+        .contact-form button {
+            
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 20px;
+            /* Выравниваем кнопку в конце формы */
+            transition:all .5s ease ;
+        }
+
+        footer{
+            position: relative;
+            bottom: 0;
+            font-size: 10px;
+        }
+        
+
+
+
+
+      }

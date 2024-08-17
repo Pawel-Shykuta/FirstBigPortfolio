@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+   
+    <header>
+        <nav class="container">
+            <h1><a href="index.html">СЕВЕРНЫЙ ПОЛЮС</a></h1>
+                <ul>
+                    <li><a href="#Glavnaya">Главная</a></li>
+                    <li><a href="#Info">О нас</a></li>
+                    <li><a href="Magasine.html">Магазин</a>
+                        <ul>
+                            <li><a href="Magasine_Rukzaki.html">Рюкзаки</a></li>
+                            <li><a href="Sumki.html">Сумки</a></li>
+                            <li><a href="Portfeli.html">Портфели</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Contaktions">Контакты</a></li>
+                </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+        </div>
+    </header>
+
+   
+
+
+    <nav class="body-con" >
+
+        <h1 id="Glavnaya">ПРИГОТОВЬТЕСЬ<br>
+            К ПРИКЛЮЧЕНИЮ</h1>
+    </nav>
+
+    <section>
+        <img src="Foto/Black.png" alt="" class="IMG">
+        <img src="Foto/Second_Foto.png" alt="" class="IMG">
+    </section>
+    
+    <section class="main">
+        <div class="Foto_1">
+            <div class="box">
+                <a href="Magasine_Rukzaki.html"> рюкзаки</a>              
+            </div>
+        </div>
+        <div class="Foto_2">
+            <div class="box">
+                <a href="Sumki.html">Сумки</a>              
+            </div>
+        </div>
+        <div class="Foto_3">
+            <div class="box">
+                <a href="Portfeli.html">Портфели</a>              
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main_2">
+        <div class="main_2">
+            <div class="foto_main_2">
+                <h1>РАСПРОДАЖА</h1>
+                <p>СКИДКА 50%</p>
+            </div>
+
+            <nav class="rukzaki">
+                <nav class="rukzak_1">
+                    <a href="Towar.html"><img src="Foto/rukzak_1.png" alt=""></a>
+                        <div>
+                        <p>Рюкзак</p>
+                        </div>
+                        
+                </nav>
+                <nav class="rukzak_2">
+                    <a href="Towar_two.html"><img src="Foto/rukzak_2.png" alt=""></a>
+                    <div>
+                        <p>Рюкзак</p>
+                    </div>
+                </nav>
+                <nav class="rukzak_3">
+                    <a href="Towat_Three.html"><img src="Foto/rukzak_3.png" alt=""></a>
+                    <div>
+                    <p>Рюкзак</p>
+                    </div>
+                </nav>
+            </nav>
+        
+        </div>
+    </section>
+
+
+    <section class="main_3">   
+            <nav id="Info">
+                <h1>О НАС</h1>
+                <p>Этот Сайт, является первой моей разработкой, по шаблнону с интернета.
+                    Созание сайта было окончено 23.06.2024 о 14.30. Програмист: Шикута Павло Павлович).
+                </p>
+            </nav>
+
+
+    </section>
+
+    <section class="main_4">
+        <form class="form" onsubmit="sendEmailTelegram(event)">
+            <nav class="contact-form" id="Contaktions">
+                <input type="text" name="name" autocomplete="off" placeholder="Ваше имя" required>
+                <input type="email" name="email" autocomplete="off" placeholder="Ваш Email" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" autocomplete="off" maxlength="13">
+                <textarea name="message" placeholder="Ваше сообщение" id="texter"></textarea>
+            </nav>
+            <div class="form_submit_block">
+                <div class="form_submit_button">
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+            <div class="form_send-resultat"></div>
+        </form>
+        
+        <nav class="contacts_information">
+            <h1>КОНТАКТЫ</h1>
+            <p>На постройку этого сайта, у меня ушли,  <br>
+                две недели чтобы сделать его с нуля. <br>
+                так много времени потрачено было из-за того,<br>
+                что это мой первый,  настолько крупный проэкт<br>
+                и попросту, я не знал как выполнить те или иные функции</p>
+            <a href="mailto:example@example.com">Pasha@gmail.com</a>
+            <a href="tel:0634132428">+(380)634132428</a>
+        </nav>
+    </section>
+
+    <footer>
+        <h1>© 2035 СЕВЕРНЫЙ ПОЛЮС. Сайт создан на HTML&CSS&JS за 13 дней</h1>
+    </footer>
+
+
+    <script src="Logik.js" async defer></script>
+</body>
+</html>
